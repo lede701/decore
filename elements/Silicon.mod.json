@@ -1,0 +1,20 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 50,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "Blocks.DIRT#0"
+    },
+    "smeltingReturnStack": {
+      "value": "Blocks.SAND#0"
+    },
+    "name": "silicon",
+    "namespace": "mod"
+  }
+}

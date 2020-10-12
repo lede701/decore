@@ -1,0 +1,12 @@
+{
+  "group": "decore",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 50,
+  "ingredient": {
+    "item": "minecraft:dirt"
+  },
+  "result": {
+    "item": "appliedenergistics2:silicon"
+  }
+}

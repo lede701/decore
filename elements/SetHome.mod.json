@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "command",
+  "definition": {
+    "commandName": "sethome",
+    "permissionLevel": 1,
+    "onCommandExecuted": {
+      "name": "SetHomeCommandExecuted"
+    }
+  }
+}
