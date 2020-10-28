@@ -1,0 +1,75 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 240,
+          "height": 40,
+          "name": "TeleX",
+          "x": 318,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "X",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "X",
+          "x": 300,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Z",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Z",
+          "x": 300,
+          "y": 168
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Teleport",
+          "onClick": {
+            "name": "TeleportTo"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Teleport",
+          "x": 426,
+          "y": 222
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 240,
+          "height": 40,
+          "name": "TeleZ",
+          "x": 318,
+          "y": 150
+        }
+      }
+    ]
+  }
+}

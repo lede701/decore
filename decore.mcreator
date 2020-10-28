@@ -160,19 +160,128 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rtp_wand_recipe"
+    },
+    {
+      "name": "HomeWandRightClickedInAir",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "home_wand_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HomeWand",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "home_wand"
+    },
+    {
+      "name": "HomeWandRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "home_wand_recipe"
+    },
+    {
+      "name": "TeletportWandGUI",
+      "type": "gui",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teletport_wand_gui"
+    },
+    {
+      "name": "TeleportTo",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleport_to",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "guistate",
+            "type": "map"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TeleportWand",
+      "type": "item",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleport_wand"
+    },
+    {
+      "name": "TeleportWandRecipe",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "teleport_wand_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.decore.rtp_wand": "Rtp Wand"
+      "item.decore.home_wand": "Home Wand",
+      "item.decore.rtp_wand": "Rtp Wand",
+      "item.decore.teleport_wand": "Teleport Wand"
     }
   },
   "workspaceSettings": {
     "modid": "decore",
     "modName": "DECore",
-    "version": "1.0.2",
+    "version": "1.0.5",
     "author": "Leland Ede (zaxis701)",
     "websiteURL": "https://www.lededesigns.com/decore",
     "disableForgeVersionCheck": true,

@@ -27,22 +27,23 @@ public class RtpCommandExecutedProcedure extends DecoreModElements.ModElement {
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		IWorld world = (IWorld) dependencies.get("world");
+		boolean ProcessRandom = false;
 		double NewX = 0;
 		double NewY = 0;
 		double NewZ = 0;
 		double Range = 0;
-		boolean ProcessRandom = false;
+		double LowRange = 0;
 		Range = (double) 50000;
+		LowRange = (double) ((Range) / 2);
 		ProcessRandom = (boolean) (true);
 		while ((ProcessRandom)) {
-			NewX = (double) Math.round(((Range) * Math.random()));
-			NewZ = (double) Math.round(((Range) * Math.random()));
+			NewX = (double) (Math.round(((Range) * Math.random())) - (LowRange));
+			NewZ = (double) (Math.round(((Range) * Math.random())) - (LowRange));
 			NewY = (double) 20;
 			while ((!(world.canBlockSeeSky(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ)))))) {
 				NewY = (double) ((NewY) + 1);
 			}
 			NewY = (double) ((NewY) + 1);
-			System.out.println((("Block: ") + "" + ((world.getBlockState(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ)))))));
 			if ((world.isAirBlock(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ))))) {
 				ProcessRandom = (boolean) (false);
 			}
