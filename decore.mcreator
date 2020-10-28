@@ -104,7 +104,16 @@
       "ids": {},
       "registry_name": "tpa_command_executed",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "cmdparams",
+            "type": "map"
+          }
+        ]
       }
     },
     {
@@ -133,24 +142,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "silicon"
+    },
+    {
+      "name": "RtpWand",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rtp_wand"
+    },
+    {
+      "name": "RtpWandRecipe",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rtp_wand_recipe"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.decore.rtp_wand": "Rtp Wand"
+    }
   },
   "workspaceSettings": {
     "modid": "decore",
     "modName": "DECore",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Leland Ede (zaxis701)",
     "websiteURL": "https://www.lededesigns.com/decore",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "requiredMods": [
-      "appliedenergistics2"
-    ],
+    "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],

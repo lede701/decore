@@ -53,6 +53,8 @@ public class TpaCommand extends DecoreModElements.ModElement {
 		});
 		{
 			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			$_dependencies.put("cmdparams", cmdparams);
 			TpaCommandExecutedProcedure.executeProcedure($_dependencies);
 		}
 		return 0;

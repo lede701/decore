@@ -3,7 +3,7 @@ loaderVersion="[31,)"
 
 [[mods]]
 modId="decore"
-version="1.0.1"
+version="1.0.2"
 displayName="DECore"
 credits="Thanks to my kids for wanting more from their games."
 displayURL="https://www.lededesigns.com/decore"
@@ -17,11 +17,5 @@ authors="Leland Ede (zaxis701)"
     side="BOTH"
 
 
-[[dependencies.decore]]
-    modId="appliedenergistics2"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 
