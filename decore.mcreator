@@ -16,6 +16,14 @@
             "type": "entity"
           },
           {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
             "name": "world",
             "type": "world"
           }
@@ -281,7 +289,7 @@
   "workspaceSettings": {
     "modid": "decore",
     "modName": "DECore",
-    "version": "1.0.5",
+    "version": "1.0.5b",
     "author": "Leland Ede (zaxis701)",
     "websiteURL": "https://www.lededesigns.com/decore",
     "disableForgeVersionCheck": true,

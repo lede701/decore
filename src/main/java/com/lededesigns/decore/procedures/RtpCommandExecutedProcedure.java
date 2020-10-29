@@ -21,11 +21,21 @@ public class RtpCommandExecutedProcedure extends DecoreModElements.ModElement {
 			System.err.println("Failed to load dependency entity for procedure RtpCommandExecuted!");
 			return;
 		}
+		if (dependencies.get("x") == null) {
+			System.err.println("Failed to load dependency x for procedure RtpCommandExecuted!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			System.err.println("Failed to load dependency z for procedure RtpCommandExecuted!");
+			return;
+		}
 		if (dependencies.get("world") == null) {
 			System.err.println("Failed to load dependency world for procedure RtpCommandExecuted!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
+		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
+		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		boolean ProcessRandom = false;
 		double NewX = 0;
@@ -33,17 +43,17 @@ public class RtpCommandExecutedProcedure extends DecoreModElements.ModElement {
 		double NewZ = 0;
 		double Range = 0;
 		double LowRange = 0;
-		Range = (double) 50000;
+		Range = (double) 10000;
 		LowRange = (double) ((Range) / 2);
 		ProcessRandom = (boolean) (true);
 		while ((ProcessRandom)) {
-			NewX = (double) (Math.round(((Range) * Math.random())) - (LowRange));
-			NewZ = (double) (Math.round(((Range) * Math.random())) - (LowRange));
+			NewX = (double) (x + (Math.round(((Range) * Math.random())) - (LowRange)));
+			NewZ = (double) (z + (Math.round(((Range) * Math.random())) - (LowRange)));
 			NewY = (double) 20;
 			while ((!(world.canBlockSeeSky(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ)))))) {
 				NewY = (double) ((NewY) + 1);
 			}
-			NewY = (double) ((NewY) + 1);
+			NewY = (double) ((NewY) + 2);
 			if ((world.isAirBlock(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ))))) {
 				ProcessRandom = (boolean) (false);
 			}
