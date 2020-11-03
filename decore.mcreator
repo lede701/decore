@@ -275,6 +275,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "teleport_wand_recipe"
+    },
+    {
+      "name": "PeltToRabbitFeet",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pelt_to_rabbit_feet"
     }
   ],
   "variable_elements": [],
@@ -289,7 +298,7 @@
   "workspaceSettings": {
     "modid": "decore",
     "modName": "DECore",
-    "version": "1.0.5b",
+    "version": "1.0.6b",
     "author": "Leland Ede (zaxis701)",
     "websiteURL": "https://www.lededesigns.com/decore",
     "disableForgeVersionCheck": true,
