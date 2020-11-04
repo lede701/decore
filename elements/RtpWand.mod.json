@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Rtp Wand",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:DETools"
     },
     "stackSize": 1,
     "enchantability": 0,

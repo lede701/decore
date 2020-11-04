@@ -20,7 +20,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -34,6 +33,7 @@ import javax.annotation.Nonnull;
 
 import io.netty.buffer.Unpooled;
 
+import com.lededesigns.decore.itemgroup.DEToolsItemGroup;
 import com.lededesigns.decore.gui.TeletportWandGUIGui;
 import com.lededesigns.decore.DecoreModElements;
 
@@ -51,7 +51,7 @@ public class TeleportWandItem extends DecoreModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(1));
+			super(new Item.Properties().group(DEToolsItemGroup.tab).maxStackSize(1));
 			setRegistryName("teleport_wand");
 		}
 

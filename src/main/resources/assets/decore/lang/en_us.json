@@ -1,5 +1,6 @@
 {
   "item.decore.home_wand": "Home Wand",
   "item.decore.rtp_wand": "Rtp Wand",
-  "item.decore.teleport_wand": "Teleport Wand"
+  "item.decore.teleport_wand": "Teleport Wand",
+  "itemGroup.tabde_tools": "DE Tools"
 }

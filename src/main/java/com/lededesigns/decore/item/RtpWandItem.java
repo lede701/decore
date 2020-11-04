@@ -7,7 +7,6 @@ import net.minecraft.world.World;
 import net.minecraft.util.Hand;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
@@ -16,6 +15,7 @@ import java.util.Map;
 import java.util.HashMap;
 
 import com.lededesigns.decore.procedures.RtpCommandExecutedProcedure;
+import com.lededesigns.decore.itemgroup.DEToolsItemGroup;
 import com.lededesigns.decore.DecoreModElements;
 
 @DecoreModElements.ModElement.Tag
@@ -32,7 +32,7 @@ public class RtpWandItem extends DecoreModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(1));
+			super(new Item.Properties().group(DEToolsItemGroup.tab).maxStackSize(1));
 			setRegistryName("rtp_wand");
 		}
 

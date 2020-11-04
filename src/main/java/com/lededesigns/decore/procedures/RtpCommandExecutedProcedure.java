@@ -53,7 +53,7 @@ public class RtpCommandExecutedProcedure extends DecoreModElements.ModElement {
 			while ((!(world.canBlockSeeSky(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ)))))) {
 				NewY = (double) ((NewY) + 1);
 			}
-			NewY = (double) ((NewY) + 2);
+			NewY = (double) ((NewY) + 1);
 			if ((world.isAirBlock(new BlockPos((int) (NewX), (int) (NewY), (int) (NewZ))))) {
 				ProcessRandom = (boolean) (false);
 			}

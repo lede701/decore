@@ -284,6 +284,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "pelt_to_rabbit_feet"
+    },
+    {
+      "name": "DETools",
+      "type": "tab",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "de_tools"
     }
   ],
   "variable_elements": [],
@@ -292,13 +301,14 @@
     "en_us": {
       "item.decore.home_wand": "Home Wand",
       "item.decore.rtp_wand": "Rtp Wand",
-      "item.decore.teleport_wand": "Teleport Wand"
+      "item.decore.teleport_wand": "Teleport Wand",
+      "itemGroup.tabde_tools": "DE Tools"
     }
   },
   "workspaceSettings": {
     "modid": "decore",
     "modName": "DECore",
-    "version": "1.0.6b",
+    "version": "1.0.7b",
     "author": "Leland Ede (zaxis701)",
     "websiteURL": "https://www.lededesigns.com/decore",
     "disableForgeVersionCheck": true,

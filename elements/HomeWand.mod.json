@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Home Wand",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:DETools"
     },
     "stackSize": 1,
     "enchantability": 0,
